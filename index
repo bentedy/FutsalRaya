@@ -1,546 +1,13 @@
-
-
-Ya, anda boleh bina laman web "Will you be my Valentine?" yang butang No susah ditekan secara percuma sepenuhnya menggunakan HTML + JavaScript dan hos di GitHub Pages.
-
-1. Buat fail index.html
-Salin kod ini:
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Futsal Reunion?</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    margin-top:100px;
-}
-
-button{
-    padding:15px 30px;
-    font-size:20px;
-    margin:10px;
-    cursor:pointer;
-}
-
-#yes{
-    background:#4CAF50;
-    color:white;
-}
-
-#no{
-    background:#f44336;
-    color:white;
-    position:absolute;
-}
-</style>
-</head>
-
-<body>
-
-<h1>Futsal Reunion?</h1>
-
-<button id="yes">Yes 💖</button>
-<button id="no">No 😢</button>
-
-<script>
-const noBtn = document.getElementById("no");
-
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 150);
-    const y = Math.random() * (window.innerHeight - 80);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-
-document.getElementById("yes").onclick = () => {
-    document.body.innerHTML =
-        "<h1>Yay! ❤️ Thank you!</h1>";
-};
-</script>
-
-</body>
-</html>
-
-Give feedback
-2. Hos secara percuma di GitHub Pages
-Buat akaun di GitHub
-
-Klik New Repository
-
-Namakan contoh: valentine
-
-Upload fail index.html
-
-Pergi ke Settings → Pages
-
-Source: Deploy from branch
-
-Pilih main branch
-
-Save
-
-Anda akan mendapat URL seperti:
-
-https://username.github.io/valentine/
-3. Alternatif lebih mudah
-Jika tak mahu guna GitHub:
-
-Netlify Drop
-
-Vercel
-
-Hanya drag & drop fail index.html dan terus dapat link percuma.
-
-4. Versi yang lebih "nakal"
-Boleh juga:
-
-Setiap kali tekan No, butang Yes menjadi lebih besar.
-
-Papar gambar comel atau meme.
-
-Main lagu romantik.
-
-Tambah countdown atau animasi hati ❤️.
-
-Tukar soalan kepada "Will you marry me?" atau apa sahaja.
-
-Jika anda mahu, saya boleh buat satu versi yang nampak moden seperti yang selalu viral di TikTok/Instagram lengkap dengan animasi hati, GIF dan butang "No" yang sentiasa lari.
-
-
-Jika anda sudah ada fail index.html, berikut cara upload ke GitHub dan jadikan ia laman web percuma:
-
-Kaedah 1: Melalui Website GitHub (paling mudah)
-Log masuk ke GitHub
-
-Klik New repository (butang hijau atau tanda + → New repository).
-
-Masukkan nama repository, contoh:
-
-valentine
-Klik Create repository.
-
-Selepas repository dibuat:
-
-Klik Add file → Upload files.
-
-Seret (drag & drop) fail index.html ke halaman tersebut atau klik choose your files.
-
-Di bahagian bawah, klik Commit changes.
-
-Aktifkan GitHub Pages
-Dalam repository, klik Settings.
-
-Di menu kiri, klik Pages.
-
-Pada Source, pilih:
-
-Deploy from a branch
-
-Pilih:
-
-Branch: main
-
-Folder: / (root)
-
-Klik Save.
-
-Tunggu 1–5 minit.
-
-GitHub akan memaparkan URL seperti:
-
-https://USERNAME.github.io/valentine/
-Gantikan USERNAME dengan nama akaun GitHub anda.
-
-Jika anda guna Linux (Arch Linux)
-Buat fail dahulu:
-
-nano index.html
-Tampal kod HTML, kemudian:
-
-Ctrl+O
-Enter
-Ctrl+X
-Fail akan disimpan dalam folder semasa. Kemudian upload menggunakan langkah di atas melalui pelayar web.
-
-Jika anda tersekat di mana-mana langkah, hantar screenshot GitHub anda (contohnya halaman repository selepas dicipta), dan saya boleh tunjuk tepat butang mana yang perlu ditekan.
-
-
-image(19).png
-Aktifkan GitHub Pages
-Dalam repository, klik
-
-Daripada screenshot, masalahnya ialah repository EngagementDay2 anda masih Private. GitHub Pages percuma hanya boleh digunakan untuk repository Public (kecuali anda ada pelan berbayar tertentu).
-
-Cara betulkan
-Pergi ke Settings → General
-
-Scroll sampai ke bahagian paling bawah Danger Zone
-
-Cari Change repository visibility
-
-Klik Change visibility
-
-Pilih Make public
-
-Taip nama repository untuk pengesahan
-
-Klik I understand, change repository visibility
-
-Selepas repository menjadi Public:
-
-Kembali ke Settings → Pages
-
-Di bahagian Build and deployment
-
-Source: Deploy from a branch
-
-Branch: main
-
-Folder: /(root)
-
-Klik Save
-
-GitHub akan bina laman web dalam masa 1–5 minit.
-
-URL biasanya:
-
-https://bentedy.github.io/EngagementDay2/
-Jika belum upload index.html
-Klik tab Code
-
-Klik Add file → Upload files
-
-Pilih fail index.html
-
-Klik Commit changes
-
-Boleh hantar screenshot tab Code repository anda selepas ini, dan saya akan tunjuk langkah seterusnya berdasarkan keadaan sebenar repository tersebut.
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Will You Be My Valentine?</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    margin-top:100px;
-}
-
-button{
-    padding:15px 30px;
-    font-size:20px;
-    margin:10px;
-    cursor:pointer;
-}
-
-#yes{
-    background:#4CAF50;
-    color:white;
-}
-
-#no{
-    background:#f44336;
-    color:white;
-    position:absolute;
-}
-</style>
-</head>
-
-<body>
-
-<h1>Will Alya spent the rest of her life with Zaahid 💍 ❤️</h1>
-
-<button id="yYESSSSSSSSSSS">Yes 💖</button>
-<button id="nNOPE - hehe">No 😢</button>
-
-<script>
-const noBtn = document.getElementById("no");
-
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 150);
-    const y = Math.random() * (window.innerHeight - 80);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-
-document.getElementById("yes").onclick = () => {
-    document.body.innerHTML =
-        "<h1>Yay! ❤️ Thank you!</h1>";
-};
-</script>
-
-</body>
-</html>
-
-
-will my code work
-
-Tidak, kod itu akan error kerana ID butang yang anda gunakan tidak sama dengan yang JavaScript cari.
-
-Masalah 1: ID butang "Yes"
-HTML:
-
-<button id="yYESSSSSSSSSSS">Yes 💖</button>
-
-Give feedback
-JavaScript:
-
-document.getElementById("yes").onclick = () => {
-Tiada elemen dengan ID "yes".
-
-Masalah 2: ID butang "No"
-HTML:
-
-<button id="nNOPE - hehe">No 😢</button>
-
-Give feedback
-JavaScript:
-
-const noBtn = document.getElementById("no");
-Tiada elemen dengan ID "no".
-
-Selain itu, ID HTML yang mengandungi ruang seperti "nNOPE - hehe" boleh menyebabkan masalah dan tidak digalakkan.
-
-Cara betulkan
-Tukar kepada:
-
-<button id="yes">Yes 💖</button>
-<button id="no">No 😢</button>
-
-Give feedback
-Atau jika mahu guna nama unik:
-
-<button id="alyaYes">Yes 💖</button>
-<button id="alyaNo">No 😢</button>
-
-Give feedback
-dan ubah JavaScript:
-
-const noBtn = document.getElementById("alyaNo");
-
-document.getElementById("alyaYes").onclick = () => {
-    document.body.innerHTML =
-        "<h1>Yay! ❤️ Thank you!</h1>";
-};
-Versi yang akan berfungsi
-<h1>Will Alya spend the rest of her life with Zaahid? 💍❤️</h1>
-
-<button id="yes">Yes 💖</button>
-<button id="no">No 😢</button>
-
-Give feedback
-dan biarkan JavaScript asal:
-
-const noBtn = document.getElementById("no");
-
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 150);
-    const y = Math.random() * (window.innerHeight - 80);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-
-document.getElementById("yes").onclick = () => {
-    document.body.innerHTML =
-        "<h1>Yay! ❤️ Thank you!</h1>";
-};
-Nota kecil: ayat yang lebih natural dalam English ialah:
-
-Will Alya spend the rest of her life with Zaahid? 💍❤️
-
-Give feedback
-bukannya "spent" kerana selepas "Will" kita gunakan kata kerja asal (spend).
-
-
-betulkan semua
-
-Berikut versi yang telah dibetulkan dan boleh terus disimpan sebagai index.html:
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Will Alya Spend The Rest Of Her Life With Zaahid? 💍❤️</title>
+
+<title>ON Tak ON Bola Male Raye? ⚽</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    overflow: hidden;
-}
 
-h1 {
-    color: #ff4d6d;
-    padding: 20px;
-}
-
-button {
-    padding: 15px 30px;
-    font-size: 20px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-}
-
-#yes {
-    background: #4CAF50;
-    color: white;
-}
-
-#no {
-    background: #f44336;
-    color: white;
-    position: absolute;
-}
-</style>
-</head>
-
-<body>
-
-<h1>Will Alya spend the rest of her life with Zaahid? 💍❤️</h1>
-
-<button id="yes">YES! 💖</button>
-<button id="no">No 😢</button>
-
-<script>
-const noBtn = document.getElementById("no");
-const yesBtn = document.getElementById("yes");
-
-function moveButton() {
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-}
-
-noBtn.addEventListener("mouseover", moveButton);
-noBtn.addEventListener("click", moveButton);
-
-yesBtn.addEventListener("click", () => {
-    document.body.innerHTML = `
-        <div style="margin-top:150px;">
-            <h1>🎉 SHE SAID YES! 🎉</h1>
-            <h2>💍 Alya & Zaahid Forever ❤️</h2>
-            <p>Can't wait to spend the rest of our lives together! 🥰</p>
-        </div>
-    `;
-});
-</script>
-
-</body>
-</html>
-
-
-Give feedback
-Cara upload ke GitHub
-Dalam repository EngagementDay2
-
-Klik Add file → Create new file
-
-Nama fail:
-
-index.html
-Padam apa-apa kandungan sedia ada dan tampal kod di atas.
-
-Klik Commit changes.
-
-Kemudian:
-
-Settings → General
-
-Tukar repository kepada Public
-
-Settings → Pages
-
-Source: Deploy from a branch
-
-Branch: main
-
-Folder: /(root)
-
-Save
-
-Selepas 1–5 minit laman akan tersedia di:
-
-https://bentedy.github.io/EngagementDay2/
-Jika anda mahu versi yang lebih viral (hati terapung ❤️, konfeti 🎉, gambar Alya & Zaahid, lagu latar, dan butang "No" yang semakin mustahil ditekan), saya boleh buat satu fail index.html yang nampak seperti laman proposal profesional.
-
-
-where can i get the url or this url correct https://github.com/bentedy/EngagementDay.git
-
-Ya, URL repository GitHub anda nampaknya:
-
-https://github.com/bentedy/EngagementDay2
-Bukan:
-
-https://github.com/bentedy/EngagementDay.git
-Daripada screenshot sebelum ini, nama repository ialah EngagementDay2, bukan EngagementDay.git.
-
-Selepas GitHub Pages diaktifkan, URL laman web akan menjadi:
-
-https://bentedy.github.io/EngagementDay2/
-Jika anda mahu pastikan URL yang betul:
-
-Buka repository anda:
-
-https://github.com/bentedy/EngagementDay2
-Lihat nama repository di bahagian atas kiri (sebelah nama pengguna).
-
-URL GitHub Pages sentiasa ikut format:
-
-https://USERNAME.github.io/REPOSITORY/
-Untuk kes anda:
-
-Username = bentedy
-
-Repository = EngagementDay2
-
-Maka:
-
-https://bentedy.github.io/EngagementDay2/
-Jika anda sudah upload index.html, hantar screenshot tab Code repository atau salin URL repository yang sedang dibuka dalam browser, dan saya boleh semak sama ada semuanya sudah betul.
-
-
-Jika anda mahu versi yang lebih viral (hati terapung ❤️, konfeti 🎉, gambar Alya & Zaahid, lagu latar, dan butang "No" yang semakin mustahil ditekan), saya boleh buat satu fail index.html yang nampak seperti laman proposal profesional.
-
-Sudah tentu. Berikut ialah versi yang lebih menarik dengan:
-
-❤️ Hati terapung di latar belakang
-
-🎉 Konfeti apabila tekan YES
-
-💍 Tema proposal romantik
-
-😈 Butang NO yang lari dan semakin kecil
-
-📱 Responsif untuk telefon
-
-🎵 Tempat untuk tambah lagu latar (pilihan)
-
-Simpan sebagai index.html:
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alya ❤️ Zaahid</title>
-
-<style>
 *{
     margin:0;
     padding:0;
@@ -548,45 +15,59 @@ Simpan sebagai index.html:
 }
 
 body{
-    font-family: "Segoe UI", sans-serif;
-    height:100vh;
+    font-family:Arial,sans-serif;
+    text-align:center;
     overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url("stadium.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
 }
 
 .container{
-    text-align:center;
-    z-index:10;
+    margin-top:90px;
+    padding:20px;
 }
 
 h1{
     font-size:3rem;
-    color:white;
-    text-shadow:2px 2px 10px rgba(0,0,0,0.2);
-    margin-bottom:30px;
+    text-shadow:3px 3px 10px black;
 }
 
 p{
-    color:white;
-    font-size:1.2rem;
-    margin-bottom:30px;
+    margin-top:20px;
+    font-size:1.3rem;
+    line-height:1.8;
+}
+
+#countdown{
+    margin-top:25px;
+    font-size:1.8rem;
+    font-weight:bold;
+    color:#ffd700;
+    text-shadow:2px 2px 5px black;
 }
 
 button{
     padding:15px 35px;
     font-size:22px;
     border:none;
-    border-radius:50px;
+    border-radius:15px;
     cursor:pointer;
-    transition:0.3s;
+    margin:15px;
 }
 
 #yes{
-    background:#4CAF50;
+    background:#28a745;
     color:white;
+    transition:.3s;
 }
 
 #yes:hover{
@@ -594,494 +75,261 @@ button{
 }
 
 #no{
-    background:#ff4d4d;
+    background:#dc3545;
     color:white;
     position:absolute;
 }
 
-.heart{
+.ball{
     position:absolute;
-    color:white;
-    animation:float 8s linear infinite;
-    opacity:0.7;
+    font-size:35px;
+    animation:floatUp linear infinite;
 }
 
-@keyframes float{
+.ultras{
+    position:absolute;
+    font-size:28px;
+    animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+
     from{
-        transform:translateY(100vh);
+        transform:translateY(110vh);
+        opacity:1;
     }
+
     to{
-        transform:translateY(-100px);
+        transform:translateY(-120px);
+        opacity:0;
     }
 }
 
-.success{
-    color:white;
-    text-align:center;
-}
-
-.success h1{
-    font-size:4rem;
-}
-
-.success p{
-    font-size:1.5rem;
-}
 </style>
 </head>
 
 <body>
 
 <div class="container">
-    <h1>💍 Alya, Will You Spend The Rest Of Your Life With Zaahid? ❤️</h1>
 
-    <p>
-        Through every laugh, every challenge, and every adventure,
-        I want you by my side forever.
-    </p>
+<h1>⚽ ON Tak ON Bola Male Raye? ⚽</h1>
 
-    <button id="yes">YES 💖</button>
-    <button id="no">NO 😢</button>
+<p>
+Ejah peramai sep kito 😎<br>
+Nok temu mato tkpo doh.<br>
+Dulu suko dulu 🔥
+</p>
+
+<div id="countdown">
+⏳ Loading...
+</div>
+
+<br>
+
+<button id="yes">On Sobat 🔥</button>
+<button id="no">Dok Sey 😢</button>
+
 </div>
 
 <script>
 
-for(let i=0;i<30;i++){
-    let heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤️";
+/* ==========================
+   BOLA TERAPUNG
+========================== */
 
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.fontSize=(Math.random()*25+15)+"px";
-    heart.style.animationDuration=(Math.random()*5+5)+"s";
+for(let i=0;i<15;i++){
 
-    document.body.appendChild(heart);
+    const ball=document.createElement("div");
+
+    ball.className="ball";
+    ball.innerHTML="⚽";
+
+    ball.style.left=Math.random()*100+"vw";
+    ball.style.animationDuration=(5+Math.random()*8)+"s";
+
+    document.body.appendChild(ball);
 }
+
+/* ==========================
+   ULTRAS / PENYOKONG
+========================== */
+
+const supporterIcons=[
+    "🚩",
+    "🏴",
+    "📣",
+    "🥁",
+    "🙌",
+    "👏"
+];
+
+for(let i=0;i<25;i++){
+
+    const ultra=document.createElement("div");
+
+    ultra.className="ultras";
+
+    ultra.innerHTML=
+        supporterIcons[
+            Math.floor(
+                Math.random()*supporterIcons.length
+            )
+        ];
+
+    ultra.style.left=Math.random()*100+"vw";
+    ultra.style.animationDuration=(6+Math.random()*8)+"s";
+
+    document.body.appendChild(ultra);
+}
+
+/* ==========================
+   BUTANG DOK SEY LARI
+========================== */
 
 const noBtn=document.getElementById("no");
 const yesBtn=document.getElementById("yes");
 
-let noSize=1;
+noBtn.style.left="58%";
+noBtn.style.top="360px";
 
-function moveNoButton(){
+function moveButton(){
 
-    const x=Math.random()*(window.innerWidth-150);
-    const y=Math.random()*(window.innerHeight-100);
+    const x=
+        Math.random()*
+        (window.innerWidth-noBtn.offsetWidth);
+
+    const y=
+        Math.random()*
+        (window.innerHeight-noBtn.offsetHeight);
 
     noBtn.style.left=x+"px";
     noBtn.style.top=y+"px";
-
-    noSize*=0.9;
-    noBtn.style.transform=`scale(${noSize})`;
 }
 
-noBtn.addEventListener("mouseover",moveNoButton);
-noBtn.addEventListener("click",moveNoButton);
+noBtn.addEventListener("mouseover",moveButton);
+noBtn.addEventListener("touchstart",moveButton);
+noBtn.addEventListener("click",moveButton);
+
+/* ==========================
+   COUNTDOWN KE 9 MALAM
+========================== */
+
+const countdown=
+document.getElementById("countdown");
+
+function updateCountdown(){
+
+    const now=new Date();
+
+    let target=new Date();
+
+    target.setHours(21,0,0,0);
+
+    if(now>target){
+        target.setDate(target.getDate()+1);
+    }
+
+    const diff=target-now;
+
+    const hours=
+        Math.floor(diff/(1000*60*60));
+
+    const minutes=
+        Math.floor(
+        (diff%(1000*60*60))/(1000*60));
+
+    const seconds=
+        Math.floor(
+        (diff%(1000*60))/1000);
+
+    countdown.innerHTML=
+        `⏳ Lagi ${hours}j ${minutes}m ${seconds}s ke match`;
+}
+
+setInterval(updateCountdown,1000);
+updateCountdown();
+
+/* ==========================
+   ON SOBAT
+========================== */
 
 yesBtn.addEventListener("click",()=>{
 
-    document.body.innerHTML=`
-        <div class="success">
-            <h1>🎉 SHE SAID YES! 🎉</h1>
-            <p>❤️ Alya & Zaahid Forever ❤️</p>
-            <p>💍 The beginning of our happily ever after 💍</p>
-        </div>
-    `;
+document.body.innerHTML=`
 
-    for(let i=0;i<200;i++){
+<div style="
+margin-top:120px;
+text-align:center;
+color:white;
+">
 
-        const confetti=document.createElement("div");
+<h1>🏟️ STADIUM SULTAN MUHAMMAD IV 🏟️</h1>
 
-        confetti.innerHTML="🎉";
-        confetti.style.position="absolute";
-        confetti.style.left=Math.random()*100+"vw";
-        confetti.style.top="-20px";
-        confetti.style.fontSize="30px";
+<br>
 
-        document.body.appendChild(confetti);
+<h2>⚽ MATCHDAY IS ON ⚽</h2>
 
-        let pos=0;
+<br>
 
-        const fall=setInterval(()=>{
-            pos+=5;
-            confetti.style.top=pos+"px";
+<h2>📣 Jumpa Male Raya Kol 9 📣</h2>
 
-            if(pos>window.innerHeight){
-                clearInterval(fall);
-            }
-        },20);
-    }
-});
+<p>🔥 Team cukup. Tinggal demo jah lagi!</p>
 
-moveNoButton();
+<p>🥁🥁🥁 ULTRAS KITO READY 🥁🥁🥁</p>
 
-</script>
+</div>
 
-</body>
-</html>
-
-
-Give feedback
-Tambah gambar Alya & Zaahid
-Upload gambar ke repository:
-
-alya.jpg
-Tambah sebelum <h1>:
-
-<img src="alya.jpg"
-     style="width:250px;height:250px;
-     object-fit:cover;
-     border-radius:50%;
-     border:6px solid white;
-     margin-bottom:20px;">
-
-Give feedback
-Tambah lagu romantik
-Upload fail MP3 (contoh song.mp3) dan letak sebelum </body>:
-
-<audio autoplay loop>
-    <source src="song.mp3" type="audio/mpeg">
-</audio>
-
-Give feedback
-Selepas upload index.html ke GitHub Pages, anda boleh hantar link seperti:
-
-https://bentedy.github.io/EngagementDay2/
-dan ia akan dibuka terus pada telefon Alya tanpa perlu install apa-apa. ❤️💍
-
-
-Ya, kod itu akan berfungsi dan apabila:
-
-Pengguna buka laman → soalan dipaparkan.
-
-Kursor sentuh butang No → butang akan lari ke lokasi rawak.
-
-Klik Yes → mesej "SHE SAID YES!" dipaparkan.
-
-Cuma ada beberapa penambahbaikan yang saya cadangkan:
-
-1. Letakkan butang No pada kedudukan awal
-Tambah selepas:
-
-const yesBtn = document.getElementById("yes");
-ini:
-
-noBtn.style.left = "55%";
-noBtn.style.top = "250px";
-Jika tidak, kedudukan awal butang mungkin pelik pada sesetengah browser.
-
-2. Betulkan grammar (pilihan)
-Lebih natural:
-
-<h1>💍 Alya, will you spend the rest of your life with Zaahid? ❤️</h1>
-
-Give feedback
-atau
-
-<h1>💍 Alya, will you marry Zaahid? ❤️</h1>
-
-Give feedback
-3. Jadikan butang Yes lebih menonjol
-Dalam CSS:
-
-#yes:hover {
-    transform: scale(1.1);
-}
-4. Jadikan butang No lebih sukar ditekan di telefon
-Tambah:
-
-noBtn.addEventListener("touchstart", moveButton);
-Selepas:
-
-noBtn.addEventListener("mouseover", moveButton);
-Supaya pada Android/iPhone butang juga akan lari apabila disentuh.
-
-5. Versi akhir JavaScript yang lebih baik
-const noBtn = document.getElementById("no");
-const yesBtn = document.getElementById("yes");
-
-noBtn.style.left = "55%";
-noBtn.style.top = "250px";
-
-function moveButton() {
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-}
-
-noBtn.addEventListener("mouseover", moveButton);
-noBtn.addEventListener("touchstart", moveButton);
-noBtn.addEventListener("click", moveButton);
-
-yesBtn.addEventListener("click", () => {
-    document.body.innerHTML = `
-        <div style="margin-top:150px;">
-            <h1>🎉 SHE SAID YES! 🎉</h1>
-            <h2>💍 Alya & Zaahid Forever ❤️</h2>
-            <p>Can't wait to spend the rest of our lives together! 🥰</p>
-        </div>
-    `;
-});
-Selepas simpan sebagai index.html, upload ke GitHub dan aktifkan GitHub Pages. Kemudian buka URL seperti:
-
-https://bentedy.github.io/EngagementDay2/
-untuk menguji sama ada semuanya berfungsi.
-
-
-image(20).png
-where is the url
-
-Daripada screenshot, GitHub Pages sudah berjaya deploy. Saya nampak di sebelah kanan ada:
-
-✅ github-pages (7 minutes ago)
-
-URL laman web anda biasanya:
-
-https://bentedy.github.io/EngagementDay/
-Cuba buka terus:
-
-EngagementDay Website
-
-Jika tidak pasti, klik pautan "github-pages" atau "+ 2 deployments" di bahagian kanan bawah (seksyen Deployments). GitHub akan memaparkan URL sebenar deployment tersebut.
-
-Alternatif lain:
-
-Klik Settings
-
-Klik Pages
-
-Di bahagian atas halaman akan tertera:
-
-"Your site is live at ..."
-
-URL penuh akan dipaparkan di situ.
-
-Jika URL di atas memberi 404, hantar screenshot halaman Settings → Pages dan saya boleh semak konfigurasi GitHub Pages anda.
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>c</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    margin-top:100px;
-}
-
-button{
-    padding:15px 30px;
-    font-size:20px;
-    margin:10px;
-    cursor:pointer;
-}
-
-#yes{
-    background:#4CAF50;
-    color:white;
-}
-
-#no{
-    background:#f44336;
-    color:white;
-    position:absolute;
-}
-</style>
-</head>
-
-<body>
-
-<h1>ON x on sobat?</h1>
-
-<button id="yes">Yes 💖</button>
-<button id="no">No 😢</button>
-
-<script>
-const noBtn = document.getElementById("no");
-
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 150);
-    const y = Math.random() * (window.innerHeight - 80);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-
-document.getElementById("yes").onclick = () => {
-    document.body.innerHTML =
-        "<h1>Demo meme panda saem</h1>";
-};
-</script>
-
-</body>
-</html>
-
-Ya, kod itu akan berfungsi.
-
-Apa yang akan berlaku:
-
-Papar tajuk:
-
-ON x on sobat?
-Apabila mouse menyentuh butang No 😢, butang akan melompat ke lokasi rawak pada skrin.
-
-Apabila klik Yes 💖, seluruh halaman akan ditukar kepada:
-
-Demo meme panda saem
-Cadangan kecil
-Letakkan butang No pada kedudukan awal supaya tidak bertindih dengan butang Yes:
-
-const noBtn = document.getElementById("no");
-
-noBtn.style.left = "55%";
-noBtn.style.top = "180px";
-Tambahkan selepas baris:
-
-const noBtn = document.getElementById("no");
-Jika mahu mesej akhir lebih menarik
-Tukar:
-
-document.body.innerHTML =
-    "<h1>Demo meme panda saem</h1>";
-kepada:
-
-document.body.innerHTML = `
-    <div style="margin-top:150px">
-        <h1>🐼 Demo Meme Panda Saem 🐼</h1>
-        <p>Sobat memang terbaik 😎</p>
-    </div>
 `;
-Untuk telefon (Android/iPhone)
-Tambah satu lagi event supaya butang No turut lari apabila disentuh:
 
-noBtn.addEventListener("touchstart", () => {
-    const x = Math.random() * (window.innerWidth - 150);
-    const y = Math.random() * (window.innerHeight - 80);
+const icons=[
+    "🚩",
+    "🏴",
+    "📣",
+    "🙌",
+    "👏",
+    "🔥",
+    "⚽",
+    "🥁"
+];
 
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-Tanpa ini, pada sesetengah telefon pengguna masih boleh menekan butang No dengan mudah.
+for(let i=0;i<400;i++){
 
+    const confetti=document.createElement("div");
 
-full script
+    confetti.innerHTML=
+        icons[
+            Math.floor(
+                Math.random()*icons.length
+            )
+        ];
 
-Berikut versi penuh yang berfungsi pada PC dan telefon. Butang No akan sentiasa lari, dan apabila tekan Yes, mesej "Demo Meme Panda Saem" akan dipaparkan.
+    confetti.style.position="absolute";
+    confetti.style.left=Math.random()*100+"vw";
+    confetti.style.top="-50px";
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ON x ON Sobat?</title>
+    confetti.style.fontSize=
+        (20+Math.random()*25)+"px";
 
-<style>
-body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    margin-top:100px;
-    overflow:hidden;
-    background:#f5f5f5;
+    document.body.appendChild(confetti);
+
+    let pos=-50;
+
+    const fall=setInterval(()=>{
+
+        pos+=5;
+
+        confetti.style.top=pos+"px";
+
+        if(pos>window.innerHeight){
+            clearInterval(fall);
+        }
+
+    },20);
 }
 
-h1{
-    color:#333;
-}
-
-button{
-    padding:15px 30px;
-    font-size:20px;
-    margin:10px;
-    cursor:pointer;
-    border:none;
-    border-radius:10px;
-}
-
-#yes{
-    background:#4CAF50;
-    color:white;
-}
-
-#yes:hover{
-    transform:scale(1.1);
-}
-
-#no{
-    background:#f44336;
-    color:white;
-    position:absolute;
-}
-</style>
-</head>
-
-<body>
-
-<h1>ON x ON Sobat? 😎</h1>
-
-<button id="yes">Yes 💖</button>
-<button id="no">No 😢</button>
-
-<script>
-
-const noBtn = document.getElementById("no");
-const yesBtn = document.getElementById("yes");
-
-noBtn.style.left = "55%";
-noBtn.style.top = "180px";
-
-function moveButton() {
-
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-}
-
-noBtn.addEventListener("mouseover", moveButton);
-noBtn.addEventListener("touchstart", moveButton);
-noBtn.addEventListener("click", moveButton);
-
-yesBtn.addEventListener("click", () => {
-
-    document.body.innerHTML = `
-        <div style="margin-top:150px;">
-            <h1>🐼 Demo Meme Panda Saem 🐼</h1>
-            <h2>Sobat memang terbaik 😎</h2>
-            <p>Terima kasih sebab tekan YES! 🎉</p>
-        </div>
-    `;
 });
 
 </script>
 
 </body>
 </html>
-
-Give feedback
-Cara guna di GitHub
-Buka repository EngagementDay
-
-Klik index.html
-
-Klik ikon pensel ✏️ (Edit file)
-
-Padam semua kod lama
-
-Tampal kod di atas
-
-Klik Commit changes
-
-Tunggu 1–2 minit
-
-Kemudian buka:
-
-https://bentedy.github.io/EngagementDay/
-untuk melihat laman web yang telah dikemas kini.
-
-
